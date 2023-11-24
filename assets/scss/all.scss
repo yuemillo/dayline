@@ -4,10 +4,16 @@
 @import './utils/_utilities';
 @import "../../node_modules/bootstrap";
 
+@import './base/base';
+@import './base/typography';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
-@import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";
+
+
+@import './vendor/swal';
+
+
+@import './pages/index.scss';

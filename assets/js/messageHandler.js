@@ -10,10 +10,9 @@ Swal.fire({
     popup: "swal__popup",
     confirmButton: "swal__confirmButton"
   },
-  // title: "1246",
-  // icon: "error",
-  // // iconColor: 'gold',
-  text: "Something went wrong!",  
+  title,
+  icon,
+  text  
 });
 }
 

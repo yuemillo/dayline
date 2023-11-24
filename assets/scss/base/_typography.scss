@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap');
+
+
+// font-weight
+// fw 300 -> fw-light
+// fw 400 -> fw-normal
+// fw 700 -> fw-bold
+// fw 900 -> fw-black
+
+
+//font-size
+// fz 80 -> dispaly-1
+// fz 40 -> fs-1 
+// fz 32 -> fs-2 
+// fz 28 -> fs-3 
+// fz 24 -> fs-4 
+// fz 20 -> fs-5 
+// fz 16 -> fs-6 
+
+// font-family
+// $font-family:  'Noto Sans TC', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+.fs-1{
+    letter-spacing: .1em;
+}
+
+
+//icon
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+// <i class="fa-brands fa-facebook"></i> fb
+// <i class="fa-brands fa-instagram"></i> ig
+// <i class="fa-brands fa-youtube"></i> yt
+// <i class="fa-solid fa-crown"></i> 王冠

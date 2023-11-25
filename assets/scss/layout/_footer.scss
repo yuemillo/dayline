@@ -1,4 +1,9 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer .footerbottom p {
+  color: rgb(173, 181, 189);
 }

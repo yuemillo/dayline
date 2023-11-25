@@ -1,55 +1,28 @@
+
+$primary: #9747FF;
+$warning : #FFC107;
+$pink :  #FF97B0;
+$gray : #ADB5BD;
+
 .header {
   overflow: hidden;
 }
-
-
-
-
-
-.header .pushsearchbarright {
-  display: inline;
-  padding-left: 100px;
+form{
+  max-width: 640px;
+}
+.inputWithin {
+  position: relative; 
+  display: inline-block;
+}		
+.inputWithin .icon { /*左邊圖示*/
+  position: absolute; 			
+  left: 6px;
+  top: calc(50% - 0.5em);
 }
 
-.header .searchbar {
-  font-family: 'Noto Sans TC';
-  font-weight: normal;
-  font-size: 16;
-  line-height: 24px;
-  letter-spacing: 0%;
-  display: inline;
-  text-align: center;
-  border-radius: 10px;
-  border: none;
-  width: 500px;
-}
-
-.header .pushloginright {
-  display: inline;
-  padding-left: 150px;
-}
-
-.header .login {
-  color: white;
-  background-color: transparent;
-  font-family: 'Noto Sans TC';
-  font-weight: bold;
-  font-size: 20;
-  line-height: 30px;
-  letter-spacing: 0%;
-  border-radius: 10px;
-  border: 2px solid white;
-  width: 70px;
-  margin: auto;
-}
-
-.header .pushiconright {
-  display: inline;
-  padding-left: 10px;
-}
-
-.header .material-symbols-outlined {
-  background: rgb(173, 181, 189);
-  border-radius: 50%;
-  border: 2px solid white;
+.userPic{
+  width: 48px;
+  height: 48px;
+  border: 3px solid white;
+  border-radius: 100%;
 }

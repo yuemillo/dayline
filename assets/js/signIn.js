@@ -1,7 +1,6 @@
-import Swal from 'sweetalert2';
 // import { showMsg } from './messageHandler';
 import axios, { isCancel, AxiosError } from 'axios';
-
+import checkToken from './tokenHandler';
 //elem
 const errorMsg = document.querySelector('.signIn__errorMsg');
 const submitBtn = document.querySelector('.signIn__submitBtn');
@@ -10,7 +9,7 @@ const psd = document.querySelector('.signIn__userPsd');
 
 let isValidUser = false;
 
-
+console.log(checkToken());
 
 //sent data to check is user exist
 function checkUser(email,password){
@@ -21,8 +20,10 @@ function checkUser(email,password){
 }
 // if input invalid or not exist
 function callError(input){
+    const msg = ''; 
     if(input) input.classList.add('signIn__input--invalid');
     errorMsg.classList.remove('d-none');
+    errorMsg.textContent = msg;
 }
 
 

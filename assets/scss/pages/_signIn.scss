@@ -1,5 +1,6 @@
 
 .signIn{
+
     background-color: rgba(0,0,0,.3);
     background-image: url('../images/signIn_bg.avif');
     background-blend-mode: overlay;
@@ -15,6 +16,7 @@
     &__form{
         width: min(480px,85vw);
         border-radius: 24px;
+        background-color: rgba(255,255,255,.8);
     }
 
     &__errorMsg{

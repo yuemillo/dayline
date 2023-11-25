@@ -4,12 +4,12 @@ h1,h2,h3,h4,h5,h6,p,ul,dl,ol{
 }
 
 
-a{
+a,button{
     display: inline-block;
     color: inherit;
 }
 
-img{
+img,svg{
     max-width: 100%;
     height: auto;
     vertical-align: middle;

@@ -11,7 +11,7 @@ Swal.fire({
     confirmButton: "swal__confirmButton"
   },
   title,
-  icon,
+  icon, //success ,error ,warning ,info ,question
   text  
 });
 }

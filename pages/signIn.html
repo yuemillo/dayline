@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入 || 日更</title>
 </head>
-<body>    
+<body>
+  <%- include('./layout/header'); -%>    
+      
   <div class="signIn">
+    
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <h1 class="signIn__title text-center mb-5 display-md-2 fw-bold text-white display-1">日&nbsp;&nbsp;更</h1>
       <form class="signIn__form border  p-3">
@@ -27,7 +30,7 @@
       </form>
   </div>    
   </div>
-    
+  <%- include('./layout/footer'); -%>    
     <script type="module" src="../main.js"></script>
 </body>
 </html>

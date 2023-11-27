@@ -4,6 +4,9 @@
 @import './utils/_utilities';
 @import "../../node_modules/bootstrap";
 
+@import './utils/breakpoint';
+
+
 @import './base/base';
 @import './base/typography';
 @import './layout/header.scss';
@@ -18,3 +21,4 @@
 
 @import './pages/index.scss';
 @import './pages/signIn';
+@import './pages/signUp';

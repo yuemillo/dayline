@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>註冊 || 日更</title>
-</head>
-<body>
-    <div class="signUp" style="background:
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
-    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
-    linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
-    background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
-    background-color: #840b2a;
-    min-height: 100vh;
-    display: grid;
-    place-content: center;">
-        <div class="d-flex align-items-center justify-content-center text-white bg-primary" style="width: max(640px,75vh); height: 400px;">
-            測試
-        </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>註冊 || 日更</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+		<div class="signUp min-vh-100 d-flex justify-content-center">
+			<main class="py-5 w-100 d-flex">
+				<div class="form-wrap h-100 p-3 d-flex align-items-conter">
+					<form class="form p-3 border border-primary flex-grow-1 mx-auto rounded-3">
+                        <h1 class="fs-1 text-center fw-bold py-4 border-bottom border-2 border-primary mb-4">註冊</h1>
 
-    <script type="module" src="../main.js"></script>
-</body>
+						<div class="form-group mb-4">
+							<label for="user_name" class="mb-1 fs-4">姓名</label>
+							<input
+								type="password"
+								class="form-control"
+								id="user_name"
+								placeholder="請輸入姓名"
+							/>
+						</div>
+                        <div class="form-group mb-4">
+							<label for="user_email" class="mb-1 fs-4">電子信箱</label>
+							<input
+								type="email"
+								class="form-control"
+								id="user_email"								
+								placeholder="請輸入你的電子信箱"
+							/>
+						</div>
+						<div class="form-group mb-5">
+							<label for="user_password" class="mb-1 fs-4">密碼</label>
+							<input
+								type="password"
+								class="form-control"
+								id="user_password"
+								placeholder="請輸入密碼"
+							/>
+						</div>
+
+
+
+						<button type="submit" class="btn btn-primary w-100 mx-auto d-block mb-3" id="signUp__submit">註冊</button>
+                        <p>已經是會員了嗎? <a href="./signIn.html" class="ms-3">登入</a></p>
+					</form>
+				</div>
+                <div class="text-wrap w-50 h-100 d-none d-lg-block text-white position-relative">
+                    <h2 class="signUp__slogan display-1 fw-black position-absolute text-uppercase">
+                        start Your <br>journey !
+                    </h2>
+                </div>
+			</main>
+		</div>
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

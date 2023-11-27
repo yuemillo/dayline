@@ -1,72 +1,9 @@
 .footer {
   background-color: black;
   overflow: hidden;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-}
-
-.footer .footerhead {
-  text-align: center;
-}
-
-.footer .footerhead h1 {
-  color: white;
-  font-family: 'Noto Sans TC';
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0%;
-}
-
-.footer .footerword {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.footer .footerword p {
-  color: white;
-  font-family: 'Noto Sans TC';
-  font-weight: regular;
-  font-size: 20;
-  line-height: 30px;
-  letter-spacing: 0%;
-  display: inline;
-  margin-left: 50px;
-
-}
-
-.footer .icon {
-  background-color: black;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.footer .icon .facebook {
-  display: inline;
-  margin-left: 50px;
-}
-
-.footer .icon .instagram {
-  display: inline;
-  margin-left: 50px;
-}
-
-.footer .icon .youtube {
-  display: inline;
-  margin-left: 50px;
-}
-
-.footer .footerbottom {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .footer .footerbottom p {
   color: rgb(173, 181, 189);
-  font-family: 'Noto Sans TC';
-  font-weight: regular;
-  font-size: 16;
-  line-height: 24px;
-  letter-spacing: 0%;
 }

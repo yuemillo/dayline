@@ -9,6 +9,7 @@
 		<%- include('./layout/header'); -%>
 		<div class="signUp min-vh-100 d-flex justify-content-center">
 			<main class="py-5 w-100 d-flex">
+<<<<<<< Updated upstream
 				<div class="form-wrap h-100 p-3 d-flex align-items-conter">
 					<form
 						class="form p-3 border border-primary flex-grow-1 mx-auto rounded-3 "
@@ -18,11 +19,17 @@
 						>
 							註冊
 						</h1>
+=======
+				<div class="form-wrap h-100 p-3 d-flex">
+					<form class="form p-3 border border-primary flex-grow-1 mx-auto rounded-3">
+                        <h1 class="fs-1 text-center fw-bold py-4 border-bottom border-2 border-primary mb-4">註冊</h1>
+>>>>>>> Stashed changes
 
 						<div class="form-group mb-4">
 							<label for="user_name" class="mb-1 fs-4">姓名</label>
 							<input
-								type="password"
+                                name="姓名"
+								type="text"
 								class="form-control"
 								id="user_name"
 								placeholder="請輸入姓名"
@@ -31,6 +38,7 @@
 						<div class="form-group mb-4">
 							<label for="user_email" class="mb-1 fs-4">電子信箱</label>
 							<input
+                                name="email"
 								type="email"
 								class="form-control"
 								id="user_email"
@@ -40,6 +48,7 @@
 						<div class="form-group mb-5">
 							<label for="user_password" class="mb-1 fs-4">密碼</label>
 							<input
+                                name="密碼"
 								type="password"
 								class="form-control"
 								id="user_password"
@@ -47,6 +56,7 @@
 							/>
 						</div>
 
+<<<<<<< Updated upstream
 						<button
 							type="submit"
 							class="btn btn-primary w-100 mx-auto d-block mb-3"
@@ -56,6 +66,14 @@
 						</button>
 						<p>已經是會員了嗎? <a href="./signIn.html" class="ms-3">登入</a></p>
 					</form>
+=======
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="submit" class="signUp__submit btn btn-primary me-5" id="signUpBtn">註冊</button>
+                            <span>已經是會員了嗎? <a href="./signIn.html" class="text-primary">登入</a></span>
+                        </div>
+                        </form>
+>>>>>>> Stashed changes
 				</div>
 				<div
 					class="text-wrap w-50 h-100 d-none d-lg-block text-white position-relative"
@@ -70,6 +88,7 @@
 		</div>
 		<%- include('./layout/footer'); -%>
 
+		<script type="module" src="../js/signUp.js"></script>
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>

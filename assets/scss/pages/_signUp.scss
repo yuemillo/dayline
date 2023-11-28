@@ -20,7 +20,7 @@
         }
     }
     .form{
-        background: rgba($color: #fff, $alpha: .7);
+        background: rgba($color: #eef, $alpha: .7);
     }
 
 }
@@ -29,4 +29,7 @@
     top: 15%;
     left: 5%;
     text-shadow: 0 0 .25em $dark;
+}
+.signUp__submit{
+    width: 120px;
 }

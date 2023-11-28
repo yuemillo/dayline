@@ -12,7 +12,7 @@
     
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <h1 class="signIn__title text-center mb-5 display-md-2 fw-bold text-white display-1">日&nbsp;&nbsp;更</h1>
-      <form class="signIn__form border  p-3">
+      <form class="signIn__form border rounded-2xl p-3 bg-white bg-opacity-75">
           <h2 class="text-center pb-2">登入</h1>
               <div class="mb-3">
                 <label for="userEmail" class="form-label">電子信箱</label>
@@ -23,7 +23,7 @@
                 <label for="userPsd" class="form-label">密碼</label>
                 <input type="password" class="signIn__userPsd form-control" id="userPsd" placeholder="請輸入密碼" required>
               </div>
-              <p class="signIn__errorMsg d-none text-center my-3"><i class="fa-solid fa-circle-exclamation me-1"></i><span>電子信箱有誤</span></p>
+              <p class="signIn__errorMsg d-none text-danger text-center my-3"><i class="fa-solid fa-circle-exclamation me-1"></i><span>電子信箱有誤</span></p>
               <div class="text-center">   
                   <button type="submit" class="signIn__submitBtn btn btn-primary px-5 d-inline-block">送出</button>
               </div>

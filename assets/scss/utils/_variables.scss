@@ -388,11 +388,13 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, // 4px
+  2: $spacer * .5, // 8px
+  3: $spacer, //16px
+  4: $spacer * 1.5,  //24px
+  5: $spacer * 2.25, //36px
+  6: $spacer * 3, //48px
+  lg: $spacer * 5 //80px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -403,6 +405,12 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  5:5%,
+  8:8%,
+  10:10%,
+  15:15%,
+  20:20%,
+  25:25%,
   50: 50%,
   100: 100%
 ) !default;
@@ -433,7 +441,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0rem !default;
 
 
 // Grid breakpoints

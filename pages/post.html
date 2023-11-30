@@ -8,17 +8,18 @@
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
-		<main class="min-vh-100 py-6 py-lg-lg">
+		<main class="py-6 py-lg-lg">
 			<div class="container">
 				<div class="row h-100">
 					<div
-						class="col-md-6 d-flex align-items-center justify-content-center h-100 "
+						class="col-md-6 d-flex align-items-center justify-content-center h-100"
 					>
 						<img src="../assets/images/post_tiger.jpg" alt="" />
 					</div>
 					<div class="col-md-6 flex-grow-1">
-						<div class="h-100">
-							<div class="post px-3 px-md-5 border border-primary h-100 shadow-lg">
+							<div
+								class="post px-3 px-md-4 border border-primary h-100 shadow-lg position-relative flex-grow-1 d-flex flex-column"
+							>
 								<article class="post__content pt-6 pb-2 pt-lg-6">
 									<small class="post__days mb-3 d-block"
 										>第<span
@@ -35,47 +36,191 @@
 										<!-- 這不僅是一幅畫， -->
 										<!-- 更是我對自然之美的愛慕之情。希望觀者能透過我的視角，感受到老虎那獨特的魅力，並分享我對大自然的深厚敬意。 -->
 									</p>
-                  <div class="post__creater d-flex align-items-center">
-                    <span class="material-icons-outlined me-2">
-                      star
-                      </span>
-                    <div class="post__creater__appellation me-2">受歡迎 <span class="me-1">創作家</span></div>
-                    <a href="#" class="d-flex align-items-center text-decoration-none">
-                      <img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic me-1">
-                      <h3 class="fs-5">孫東寶</h3>
-                    </a>
-                    
-                  </div>
-
+									<div class="post__creater d-flex align-items-center">
+										<span class="material-icons-outlined me-2"> star </span>
+										<div class="post__creater__appellation me-2">
+											受歡迎 <span class="me-1">創作家</span>
+										</div>
+										<a
+											href="#"
+											class="d-flex align-items-center text-decoration-none"
+										>
+											<img
+												src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+												alt=""
+												class="userPic me-1"
+											/>
+											<h3 class="fs-5">孫東寶</h3>
+										</a>
+									</div>
 								</article>
-                <section class="post__commit__wrap border-top p-2">
-					<h2 class="post__commit__title fs-5 fw-bold mb-3">回應</h2>
-					<ul class="post__commit__content d-flex flex-column position-relative">
-						<li class="w-100 d-flex align-items-center px-1 mb-3">
-							<a href="#" class="d-flex align-items-center text-decoration-none me-3">
-								<img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic-sm me-1">
-								<h3 class="fs-5">孫一</h3>
-							</a>
-							<p>大老牛逼，猴子666666</p>
-						</li>
-						<li class="w-100 d-flex align-items-center px-1 mb-3">
-							<a href="#" class="d-flex align-items-center text-decoration-none me-3">
-								<img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic-sm me-1">
-								<h3 class="fs-5">孫二</h3>
-							</a>
-							<p>大老牛逼，猴子666666</p>
-						</li>
-						<li class="w-100 d-flex align-items-center px-1 mb-3">
-							<a href="#" class="d-flex align-items-center text-decoration-none me-3">
-								<img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic-sm me-1">
-								<h3 class="fs-5">孫三</h3>
-							</a>
-							<p>大老牛逼，猴子666666</p>
-						</li>
-					</ul>			
-				</section>
+								<section
+									class="post__commit__wrap border-top p-2 flex-grow-1 d-flex flex-column"
+								>
+									<h2 class="post__commit__title fs-5 fw-bold mb-3">回應</h2>
+									<ul class="post__commit__content d-flex flex-column overflow-hidden">
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫一</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫二</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+										<li class="w-100 d-flex align-items-center px-1 mb-3">
+											<a
+												href="#"
+												class="d-flex align-items-center text-decoration-none me-3"
+											>
+												<img
+													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
+													alt=""
+													class="userPic-sm me-1"
+												/>
+												<h3 class="fs-5">孫三</h3>
+											</a>
+											<p>大老牛逼，猴子666666</p>
+										</li>
+									</ul>
+									<div
+										class="post__commit__input p-3 border border-danger mt-auto mb-3"
+									>
+										123456
+									</div>
+								</section>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>

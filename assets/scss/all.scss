@@ -1,25 +1,33 @@
+//bs
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import './node_modules/bootstrap/scss/maps';
 @import './utils/_utilities';
 @import "../../node_modules/bootstrap";
 
+//utils
 @import './utils/breakpoint';
 @import './utils/hover';
 
-
+//base
 @import './base/base';
 @import './base/typography';
+
+//layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
+//component
+@import './component/userPic';
 
 
 
-@import './vendor/swal';
-
-
+//page
 @import './pages/index.scss';
 @import './pages/signIn';
 @import './pages/signUp';
+@import './pages/post';
+
+//套件
+@import './vendor/swal';

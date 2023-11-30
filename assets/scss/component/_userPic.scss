@@ -1,0 +1,19 @@
+%userPic{
+    aspect-ratio: 1;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.userPic{
+    @extend %userPic;
+    width: 48px;
+
+    &-sm{
+        @extend %userPic;
+        width: 36px;
+    }
+    &-mini{
+        @extend %userPic;
+        width: 24px;
+    }
+}

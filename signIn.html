@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 || 日更</title>
+  <script type="module" crossorigin src="/dayline/assets/signIn-5a1521bb.js"></script>
+  <link rel="modulepreload" crossorigin href="/dayline/assets/main-5520bd99.js">
+  <link rel="stylesheet" href="/dayline/assets/main-1df976d0.css">
+</head>
+<body>
+  <div class="container-fluid bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex navbar-dark py-3">
+            
+                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="#">日更</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="#">日更</a>
+                        <form class="mt-4 mt-lg-0">
+                            <div class="inputWithin d-flex justify-content-center">
+                                <i class='fas fa-search icon'></i>
+                                <input class="form-control ps-4" type="search" placeholder="搜尋更多日更" aria-label="Search">
+                            </div>  
+                        </form>
+                        <ul class="navbar-nav mb-2 mb-lg-0 mt-3 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold text-light me-5" href="#">日更說明</a>
+                        </li>
+                            <button class="btn btn-outline-light px-4" type="submit">登入</button>
+                        </ul>
+                   
+                </div> 
+        
+        </nav>
+    </div>
+</div>
+
+<!-- <div class="header d-flex justify-content-center ">
+    
+    <div class="pushsearchbarright">
+        <input type="text" class="searchbar" placeholder="搜尋更多日更">
+    </div>
+    <div class="pushloginright">
+        <button class="login">登入</button>
+    </div>
+    <div class="pushiconright">
+        <i class="material-symbols-outlined" style="font-size:25px; color:white;">
+            person
+        </i>
+    </div>
+    </div>
+</div> -->
+
+
+    
+      
+  <div class="signIn">
+    
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+      <h1 class="signIn__title text-center mb-5 display-md-2 fw-bold text-white display-1">日&nbsp;&nbsp;更</h1>
+      <form class="signIn__form border rounded-2xl p-3 bg-white bg-opacity-75">
+          <h2 class="text-center pb-2">登入</h1>
+              <div class="mb-3">
+                <label for="userEmail" class="form-label">電子信箱</label>
+                <input type="email" class="signIn__userEmail form-control" id="userEmail" placeholder="請輸入您的電子信箱" required>
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="userPsd" class="form-label">密碼</label>
+                <input type="password" class="signIn__userPsd form-control" id="userPsd" placeholder="請輸入密碼" required>
+              </div>
+              <p class="signIn__errorMsg d-none text-danger text-center my-3"><i class="fa-solid fa-circle-exclamation me-1"></i><span>電子信箱有誤</span></p>
+              <div class="text-center">   
+                  <button type="submit" class="signIn__submitBtn btn btn-primary px-5 d-inline-block">送出</button>
+              </div>
+      </form>
+  </div>    
+  </div>
+  <div class="footer bg-dark">
+    <div class="footerhead text-center">
+        <div class="logo h1 mt-5 text-light fw-bold">日更</div>
+    </div>
+    <ul class="footerword d-flex flex-column flex-lg-row justify-content-center mt-4 list-unstyled text-center">
+        <li class="fs-5 fs-700 text-light px-3 py-2">日更說明</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">網站導覽</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">聯絡我們</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">行銷合作</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">影音分享</li>
+    </ul>
+
+    <div class="icon d-flex justify-content-center mt-4">
+        <i class="fa-brands fa-facebook text-light fs-1 px-5"></i> 
+        <i class="fa-brands fa-instagram text-light fs-1 px-5"></i> 
+        <i class="fa-brands fa-youtube text-light fs-1 px-5"></i> 
+    </div>
+    <div class="footerbottom text-center mt-4 mb-5">
+        <p class="fs-6">此專題僅供面試作品所用，非商業營利性質</p>
+    </div>
+</div>    
+    
+    
+</body>
+</html>

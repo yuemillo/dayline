@@ -2,10 +2,8 @@ import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
+//搜尋功能
+import searchPost from './js/searchPost';
 
-console.log("Hello world!");
+searchPost();
 
-
-
-// 11/24 small progress
-// 11/25 try to finish msghandler with swal

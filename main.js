@@ -1,4 +1,9 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-console.log("Hello world!");
+
+//搜尋功能
+import searchPost from './js/searchPost';
+
+searchPost();
+

@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6,p,ul,dl,ol{
+    padding: 0;
+    margin: 0;
+}
+
+
+a,button{
+    display: inline-block;
+    color: inherit;
+    text-underline-offset: .1em;
+}
+
+img,svg{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+input::placeholder{
+    text-indent: 0.1em;
+}
+
+body{
+    line-height: 1.5;
+    font-family: $font-family;
+}

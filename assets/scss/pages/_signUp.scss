@@ -1,0 +1,38 @@
+.signUp{
+
+    main{
+        background: #fff;
+        background-image: url('../images/signUp_bg.jpg');
+        background-size: 100vw 105dvh;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 50%;
+
+        @include screen-lg{
+            background-size: 50vw 105dvh;
+        }
+    }
+
+    .form-wrap{
+        width: 100%;
+        @include screen-lg{
+            width: 50%;
+        }
+    }
+    .form{
+        background-color: rgba($color: #eee, $alpha: .7);
+        @include screen-lg{
+            background-color: transparent;
+        }
+    }
+
+}
+
+.signUp__slogan{
+    top: 15%;
+    left: 5%;
+    text-shadow: 0 0 .25em $dark;
+}
+.signUp__submit{
+    width: 120px;
+}

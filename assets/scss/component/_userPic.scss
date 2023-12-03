@@ -1,0 +1,29 @@
+%userPic{
+    --imgSize : 48px;
+    aspect-ratio: 1;
+    border: 3px solid white;
+    border-radius: 100%;
+    width: var(--imgSize);
+    height: var(--imgSize);
+}
+
+.userPic{
+    @extend %userPic;
+
+    &-sm{
+        @extend %userPic;
+        --imgSize : 36px;
+    }
+    &-mini{
+        @extend %userPic;
+        --imgSize : 24px;
+    }
+    &-selfie{
+        @extend %userPic;
+        --imgSize : clamp(48px,20vw,192px);
+    }
+}
+
+*:hover > .userPic{
+    border-color: inherit !important;
+}

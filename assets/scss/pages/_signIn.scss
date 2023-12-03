@@ -1,0 +1,25 @@
+.signIn {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: url('../images/signIn_bg.avif');
+	background-blend-mode: overlay;
+	background-position: 50% 55%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+
+	&__form {
+		width: min(480px, 85vw);		
+	}
+
+	&__errorMsg {		
+		letter-spacing: 0.25em;
+	}
+	&__input--invalid {
+		border: none;
+		box-shadow: 0 0 0 0.25rem $red-300 !important;
+	}
+}
+

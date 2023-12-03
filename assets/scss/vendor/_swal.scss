@@ -1,0 +1,9 @@
+.swal{
+    &__popup{
+        outline: 8px solid purple;
+        outline-offset: -8px;
+    }
+    &__confirmButton{
+        background: cyan;
+    }
+}

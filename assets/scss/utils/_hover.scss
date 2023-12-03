@@ -1,0 +1,25 @@
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+@each $theme , $color in  map-merge($theme-colors , $all-colors )  {
+	.text-hover-#{$theme}{
+		&:hover{
+			color: $color !important;
+		}
+	}
+	.bg-hover-#{$theme}{
+		&:hover{
+			&{	
+				background: $color !important;
+			}
+		}
+	}
+}
+// 範例 .text-hover-pink-500 text-hover-primary
+
+.hover-underline{
+    &:hover{
+        text-decoration: underline;
+        text-decoration-thickness: .1em;
+		text-underline-offset: .25em;
+    }
+}

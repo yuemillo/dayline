@@ -1,0 +1,69 @@
+
+// bs設定更改
+// 文字隨viewport大小更改 --> $enable-rfs: false
+// css權重important --> $enable-important-utilities:  false
+
+// 間距
+$spacer: 1rem ;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, // 4px
+  2: $spacer * .5, // 8px
+  3: $spacer, //16px
+  4: $spacer * 1.5,  //24px
+  5: $spacer * 2.25, //36px
+  6: $spacer * 3, //48px
+  lg: $spacer * 5 //80px
+) ;
+
+// 顏色
+$secondary:     $gray-600 ; //#6c757d
+$success:       $green ; //#198754
+$info:          $cyan ; //#0dcaf0
+$danger:        $red ;  //#dc3545
+$light:         $gray-100 ;  //#f8f9fa
+$dark:          $gray-900 ;  //#212529
+
+$primary: #9747FF;
+$warning : #FFC107;
+$pink :  #FF97B0;
+$gray : #ADB5BD;
+
+// 絕對定位(icon用)
+$position-values: (
+  0: 0,
+  5:5%,
+  8:8%,
+  10:10%,
+  15:15%,
+  20:20%,
+  25:25%,
+  50: 50%,
+  100: 100%
+)
+
+// breakpoint 放在breakpoint.scss
+// md: 768px, -->  @includes screen-md
+// lg: 992px, -->  @includes screen-lg 
+// xl: 1200px, -->  @includes screen-xl 
+
+
+// font-weight
+// fw 300 -> fw-light
+// fw 400 -> fw-normal
+// fw 700 -> fw-bold
+// fw 900 -> fw-black
+
+
+//font-size
+// fz 80 -> dispaly-1
+// fz 40 -> fs-1 
+// fz 32 -> fs-2 
+// fz 28 -> fs-3 
+// fz 24 -> fs-4 
+// fz 20 -> fs-5 
+// fz 16 -> fs-6 
+
+// font-family
+// $font-family:  'Noto Sans TC', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+

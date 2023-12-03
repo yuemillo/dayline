@@ -3,13 +3,13 @@ $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oran
 @each $theme , $color in  map-merge($theme-colors , $all-colors )  {
 	.text-hover-#{$theme}{
 		&:hover{
-			color: $color;
+			color: $color !important;
 		}
 	}
 	.bg-hover-#{$theme}{
 		&:hover{
 			&{	
-				background: $color;
+				background: $color !important;
 			}
 		}
 	}

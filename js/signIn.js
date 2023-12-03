@@ -1,6 +1,6 @@
 // import { showMsg } from './messageHandler';
 import axios, { isCancel, AxiosError } from 'axios';
-import checkToken from './tokenHandler';
+import checkToken from './helper/tokenHandler';
 //elem
 const errorMsg = document.querySelector('.signIn__errorMsg');
 const submitBtn = document.querySelector('.signIn__submitBtn');

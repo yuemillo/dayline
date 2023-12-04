@@ -1,10 +1,11 @@
 import Swal from 'sweetalert2'
+import { async } from 'validate.js';
 
 
 
 
-export function showMsg(icon,title,text){
-  
+export async function messageHandler(icon,title,text){
+  console.log(text)
 Swal.fire({
   customClass: {   
     popup: "swal__popup",
@@ -16,3 +17,13 @@ Swal.fire({
 });
 }
 
+export async function errorHandler(err){
+  const { msg , status } = err;
+
+
+  Swal.fire({
+    icon:'error',
+    title: `錯誤:${status}`,
+    text : msg
+  })
+}

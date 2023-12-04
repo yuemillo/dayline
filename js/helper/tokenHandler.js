@@ -1,6 +1,6 @@
 
-export default function checkToken(){
-    return localStorage.getItem('server-token') ?? false;
+export default function getToken(){
+    return localStorage.getItem('server-token') ?? "";
 }
 
 export function setToken(token){

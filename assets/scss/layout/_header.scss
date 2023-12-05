@@ -1,8 +1,8 @@
 
-$primary: #9747FF;
-$warning : #FFC107;
-$pink :  #FF97B0;
-$gray : #ADB5BD;
+// $primary: #9747FF;
+// $warning : #FFC107;
+// $pink :  #FF97B0;
+// $gray : #ADB5BD;
 
 .header {
   overflow: hidden;
@@ -27,3 +27,11 @@ form{
   border: 3px solid white;
   border-radius: 100%;
 }
+button:hover> .userPic + p{
+  color:$primary !important;
+}
+
+
+// .user--onLogin{
+
+// }

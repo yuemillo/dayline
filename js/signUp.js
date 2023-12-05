@@ -1,17 +1,13 @@
 import validate from 'validate.js';
 import processAxios from './helper/processAxios';
 import { errorHandler, messageHandler } from './helper/messageHandler';
+import { setItem } from './helper/StorageHandler';
 
-// {
-// 	"id": 1,
 // 	"name": "胡迪尼",
 // "selfieImg" : "",
 // "introduction" : "大魔術師穿越現代幫我做專題",
-// 	"email": "houdini@test.com",
-// 	"password": "test20406080",
 // 	"daylineType": "寫程式",
 // 	"daylineDays": 31,
-// 	"isDoneToday": false,
 // 	"historyDaylineStatus": [
 // 		{
 // 			"type": "魔術",
@@ -32,7 +28,6 @@ import { errorHandler, messageHandler } from './helper/messageHandler';
 // 			"title": "超級巨星"
 // 		}
 // 	],
-// "createAt": ""
 // }
 
 const signUpBtn = document.querySelector('#signUpBtn');
@@ -71,23 +66,43 @@ signUpBtn.addEventListener('click', (e) => {
 	// validate(都有通過會是undefined)
 	const isErr = validate(obj, constraints) ?? false;
 
-	if(isErr) Object.keys(isErr).forEach(key=> showErr(key,isErr[key]))
+	if (isErr) Object.keys(isErr).forEach((key) => showErr(key, isErr[key]));
 	else submitForm(obj);
 });
 
 async function submitForm(data) {
+	const time = new Date().getTime();
+	setItem('isNewUser', true);
+	const finalObj = {
+		...data,
+		createDate: time,
+		updateDate: time,
+		isDoneToday: false,
+		posts: [],
+		historyDayline: [],
+	};
 	try {
-		const result = await processAxios('post', 'signup', data);
+		const result = await processAxios('post', 'signup', finalObj);
+
 		console.log(result);
+		//成功反饋
+		if (result.status === 201) {
+			const dialog = await messageHandler('success', '註冊成功!', '', {
+				confirmButtonText: '登入',
+			});
+
+			if (dialog.isConfirmed) location.href = './signIn.html';
+		}
 	} catch (err) {
-		const { message: status } = err;
-		const { data: msg } = err.response;
+		console.log(err);
+
 		//有相同信箱存在 Email already exists
-		if (msg === 'Email already exists') showErr("email",'該信箱已經被註冊了');
+		if (err?.response?.data === 'Email already exists')
+			showErr('email', '該信箱已經被註冊了');
 	}
 }
 
-function showErr(target,msg) {
+function showErr(target, msg) {
 	const elem = document.getElementById(`user_${target}`).nextElementSibling;
 	elem.textContent = msg;
 	elem.style.display = 'block';
@@ -104,6 +119,3 @@ inputs.forEach((input) =>
 		}
 	})
 );
-
-
-//12/5註冊做完

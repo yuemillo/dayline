@@ -1,44 +1,52 @@
-// import { showMsg } from './messageHandler';
-import axios, { isCancel, AxiosError } from 'axios';
-import checkToken from './helper/tokenHandler';
+import { setItem } from './helper/StorageHandler';
+import processAxios from './helper/processAxios';
 //elem
 const errorMsg = document.querySelector('.signIn__errorMsg');
 const submitBtn = document.querySelector('.signIn__submitBtn');
 const email = document.querySelector('.signIn__userEmail');
 const psd = document.querySelector('.signIn__userPsd');
 
-let isValidUser = false;
-
-console.log(checkToken());
-
-//sent data to check is user exist
-function checkUser(email,password){
-    
-    // axios.post('http://localhost:3000/posts',{content:'我成功了嗎',isfa: '並沒有'})
-    // .then(res=>console.log(res.data))
-    // .catch(err=>console.log(err))
-}
-// if input invalid or not exist
-function callError(input){
-    const msg = ''; 
-    if(input) input.classList.add('signIn__input--invalid');
-    errorMsg.classList.remove('d-none');
-    errorMsg.textContent = msg;
-}
-
-
-//EventListener
-submitBtn.addEventListener('click', (e) => {
+submitBtn.addEventListener('click', async (e) => {
 	e.preventDefault();
-
-	if (!email.value) return callError(email);
-    if (!psd.value) return callError(psd)
-    //是的話跳轉頁面
-    if(isValidUser) location.href = './about.html';
+	//如果為空值返回
+	if (!email.value || !psd.value) return;
+	//有值的話丟去檢查
+	try {
+		const result = await processAxios('post', 'signin', {
+			email: email.value,
+			password: psd.value,
+		});
+		//是的話跳轉頁面
+		if (result.status === 200) {
+            console.log(result)
+			setItem('token', result?.data.accessToken);
+			// location.href = './index.html';
+		}
+	} catch (err) {
+        console.log(err);
+        const error = err.response.data;
+        //信箱格式錯誤
+        if(error === 'Email format is invalid') showError(email,'信箱格式錯誤!!')
+        //信箱不存在
+        if(error === 'Cannot find user') showError(email,'此帳號不存在!!')
+        //密碼錯誤
+        if(error === 'Incorrect password' || error === 'Password is too short') showError(psd,'密碼錯誤!!')
+    }
 });
-[email,psd].forEach(input=>{
-    input.addEventListener('input',function(e){
-        this.classList.remove('signIn__input--invalid')
-    })
-})
 
+// 錯誤反饋
+function showError(input,msg) {
+	if (input) input.classList.add('signIn__input--invalid');
+	errorMsg.classList.remove('d-none');
+	errorMsg.textContent = msg;
+}
+
+//錯誤反饋清除
+[email, psd].forEach((input) => {
+	input.addEventListener('input', function (e) {
+		if (this.classList.contains('signIn__input--invalid')) {
+			this.classList.remove('signIn__input--invalid');
+			errorMsg.classList.add('d-none');
+		}
+	});
+});

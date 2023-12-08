@@ -20,7 +20,7 @@
     }
     &-selfie{
         @extend %userPic;
-        --imgSize : clamp(48px,20vw,192px);
+        --imgSize : clamp(48px,17.5vw,192px);
     }
 }
 

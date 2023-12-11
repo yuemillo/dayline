@@ -11,6 +11,32 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/images/banner01.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/banner02.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/banner03.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <div style="height: 100px; background: cyan;">123456</div>
     <div style="height: 100px; background: cyan;">123456</div>
@@ -25,8 +51,211 @@
     <div style="height: 100px; background: cyan;">123456</div>
     <div style="height: 100px; background: cyan;">123456</div>
     <div style="height: 100px; background: cyan;">123456</div>
+    <div class="sort">
+      <div class="sortBgMagnet">
+        <img src="/assets/images/magnet.png" alt="">
+      </div>
+      <div class="sortBgBush">
+        <img src="/assets/images/bush.png" alt="">
+      </div>
+      <div class="sortBgRhombus01">
+        <img src="/assets/images/rhombus.png" alt="">
+      </div>
+      <div class="sortBgRhombus02">
+        <img src="/assets/images/rhombus.png" alt="">
+      </div>
+      <div class="sortBgRhombus03">
+        <img src="/assets/images/rhombus.png" alt="">
+      </div>
+      <div class="container">
+        <div class="sortTitle mb-4">
+          <h3 class="display-1 fw-black text-white">
+            日更分類
+          <span class="text-white">SORT</span>
+          </h3>
+        </div>
+        <ul class="d-flex justify-content-between flex-wrap">
+          <li class="sortCard">
+              <h3 class="sortText text-white">影音</h4>
+              <img src="/assets/images/shor01.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard">
+            <h3 class="sortText text-white">繪畫</h4>
+            <img src="/assets/images/shor02.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard">
+            <h3 class="sortText text-white">手作</h4>
+            <img src="/assets/images/shor03.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">運動</h4>
+            <img src="/assets/images/shor04.jpg" alt="">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">文章</h4>
+            <img src="/assets/images/shor05.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">攝影</h4>
+            <img src="/assets/images/shor06.jpg" alt="">
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+    <div class="rankingBg">
+      <img src="/assets/images/rankingBg.jpg" alt="">
+    </div>
+    <div class="ranking">
+    <div class="cylinderImg">
+      <img src="/assets/images/cylinder.png" alt="">
+    </div>
+    
+    <div class="container">
+      <div class="rankingList d-flex justify-content-between">
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 300px;" class="rankingTitle d-flex align-items-center px-4 py-3 mb-3">
+              <i class="fa-solid fa-crown fs-1 me-3"></i>
+              <h2>堅持的王者</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/assets/images/card01.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1126<span class="text-black">&nbsp;天</span></div>
+                <h3>揮刀</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser01.jpg" alt="">
+                  <P class="fw-bold ms-3">鎖龍</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card02.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1046<span class="text-black">&nbsp;天</span></div>
+                <h3>投籃</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser02.jpg" alt="">
+                  <P class="fw-bold ms-3">櫻木滑倒</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card03.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1006<span class="text-black">&nbsp;天</span></div>
+                <h3>烤蛋糕</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser03.jpg" alt="">
+                  <P class="fw-bold ms-3">香雞士</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 264px;" class="rankingTitle d-flex align-items-center mb-3">
+              <span class="material-icons fs-1 ms-4 me-3 my-3">
+                local_fire_department
+              </span>
+              <h2>最多關注</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/assets/images/card04.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1260<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser04.jpg" alt="">
+                  <P class="fw-bold ms-3">巧巴</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card05.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1124<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser05.jpg" alt="">
+                  <P class="fw-bold ms-3">林治零</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card06.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1003<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser06.jpg" alt="">
+                  <P class="fw-bold ms-3">馬絲客</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 320px;" class="rankingTitle d-flex align-items-center mb-3">
+              <span class="material-icons fs-1 ms-4 me-3 my-3">
+                today
+              </span>
+              <h2>當日最受歡迎</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/assets/images/card07.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">時尚穿搭</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser07.jpg" alt="">
+                  <P class="fw-bold ms-3">拿梅</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card08.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">好聲音</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser08.jpg" alt="">
+                  <P class="fw-bold ms-3">玖琳</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/assets/images/card09.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">畫畫創作</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/assets/images/rankingCardUser09.jpg" alt="">
+                  <P class="fw-bold ms-3">榮一郎</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>
 
-
+    <div class="bottom">
+      <div class="bottomBg">
+        <img src="/assets/images/bottom.jpg" alt="">
+      </div>
+      <div class="bgFlower">
+        <img src="/assets/images/smile_flower.png" alt="">
+      </div>
+      <div class="bgSmile">
+        <img src="/assets/images/smile_face.png" alt="">
+      </div>
+      <div class="bottom-divider">
+          <!-- <img src="images/divider_pink.jpg"> -->
+      </div>
+      <div class="bottom-title">
+          <p class="wordfind">搜尋日更</p>
+          <p class="wordsearch">Search</p>
+      </div>
+      <div class="bottom-search">
+          <input type="text" class="bottomsearchbar" placeholder="🔍搜尋更多日更">
+      </div>
+      <div class="bottom-word">
+          <p>每日堅持做一件事情</p>
+      </div>
+  </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

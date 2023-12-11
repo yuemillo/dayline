@@ -1,3 +1,216 @@
 .index-title {
   font-size: 100px;
 }
+.bottom .bottom-divider {
+  /*background-color: #FF97B0;*/
+}
+.sort{
+  background-color: $black;
+  padding: 36px 0;
+  position: relative;
+  .sortBgMagnet{
+    position: absolute;
+    width: 240px;
+    height: auto;
+    bottom: -70px;
+    left: 40px;
+  }
+  .sortBgBush{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: -40px;
+    left: 80px;
+  }
+  .sortBgRhombus01{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: 374px;
+    left: 138px;
+  }
+  .sortBgRhombus02{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: 106px;
+    right: 43px;
+  }
+  .sortBgRhombus03{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    bottom: 161px;
+    right: 113px;
+  }
+  ul{
+    .sortCard{
+      height: 240px;
+      width: 416px;
+      border: 8px solid $black;
+      border-radius: 40px;
+      box-shadow: 4px 4px 0 #ADB5BD;
+      overflow: hidden;
+      position: relative;
+    .sortText{
+      position: absolute;
+      bottom: 24px;
+      right: 28px;
+      z-index: 10;
+      text-shadow: 3px 3px 0 $black;
+    }
+
+    .imgPosBottom{
+      position: absolute;
+      bottom: -100%;
+    }
+      
+  }
+
+  }
+
+
+}
+.ranking{
+  position: relative;
+  background-color: $warning;
+  padding-top: 80px;
+    .cylinderImg{
+      position: absolute;
+      top: -60px;
+      right: 60px;
+      img{
+        width: 120px;
+        height: auto;
+    }
+  }
+  .rankingList{
+      padding-bottom: 80px;
+    ul{
+      
+      .rankingTitle{
+        color: white;
+        background: black;
+        border-radius: 50px;
+        border: 3px solid white;
+      }
+      .rankingCard{
+        padding-left: 28px;
+        background-color: #fff;
+        padding-left: 28px;
+        border-radius: 40px;
+        border: 5px solid black;
+        img{  
+          width: 168px;
+          height: 168px;
+          border-radius: 32px 0 0 32px;
+          display: block;
+          object-fit: cover;
+          object-position: center;
+        }
+        .rankingCardText{
+          width: 168px;
+          .rankingCardUser{
+            img{
+              width: 24px;
+              height: 24px;
+              border-radius: 12px;
+              display: block;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+    } 
+  } 
+}
+
+
+.bottom {
+  background-color: $pink;
+  position: relative;
+  .bottomBg{
+    position: absolute;
+    top: -42px;
+  }
+  .bgFlower{
+    position: absolute;
+    top: -160px;
+    right: 10px;
+    img{
+      width: 280px;
+      height: auto;
+    } 
+  }
+  .bgSmile{
+    position: absolute;
+    bottom: -102px;
+    left: 30px;
+  }
+ 
+}
+
+.bottom .bottom-title {
+  max-width: 1920px;
+  height: 240px;
+  padding: 40px, 312px, 40px, 312px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+
+.bottom .wordfind {
+  color: black;
+  font-family: 'Noto Sans TC';
+  font-weight: normal;
+  font-size: 80px;
+  letter-spacing: 0%;
+  text-shadow: 3px 3px 2px white;
+}
+
+.bottom .wordsearch {
+  color: white;
+  font-family: 'Noto Sans TC';
+  font-weight: normal;
+  font-size: 80px;
+  letter-spacing: 0%;
+  text-shadow: 3px 3px 2px black;
+}
+
+.bottom .bottom-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bottom .bottom-search .bottomsearchbar {
+  font-family: 'Noto Sans TC';
+  font-weight: normal;
+  font-size: 16;
+  line-height: 24px;
+  letter-spacing: 0%;
+  display: inline;
+  text-align: center;
+  border-radius: 10px;
+  outline: black;
+  width: 856px;
+  height: 56px;
+  margin-top: 10px;
+}
+
+.bottom .bottom-word {
+  color: white;
+  font-family: 'Noto Sans TC';
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 10%;
+  text-align: center;
+  text-shadow: 3px 3px 2px black;
+  padding-bottom: 20px;
+}

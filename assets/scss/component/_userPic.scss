@@ -1,5 +1,6 @@
 %userPic{
     --imgSize : 48px;
+    --imgSize : 48px;
     aspect-ratio: 1;
     border: 3px solid white;
     border-radius: 100%;
@@ -12,6 +13,7 @@
 
     &-sm{
         @extend %userPic;
+        --imgSize : 36px;
         --imgSize : 36px;
     }
     &-mini{

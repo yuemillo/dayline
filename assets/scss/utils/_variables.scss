@@ -16,7 +16,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #252016 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -39,7 +39,7 @@ $grays: (
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
+$pink:    #FF97B0 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
@@ -363,8 +363,8 @@ $enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
-$enable-important-utilities:  false !default;
-// $enable-important-utilities:  true !default;
+// $enable-important-utilities:  false !default;
+$enable-important-utilities:  true !default;
 
 // Prefix for :root CSS variables
 

@@ -4,14 +4,13 @@ export default ()=>{
     const offLogin = document.querySelector('.user--offLogin');
 
     //檢查token
-
+    
     //token有過就登入 反之 顯示登入註冊
-    if(false){
+    if(true){
         offLogin.style.display = 'none';
-        
     }
     else{
-        onLogin.forEach(elem=>elem.style.display = 'none')
+        onLogin.forEach(elem=>elem.classList.add('d-none'));
     }
 };
 

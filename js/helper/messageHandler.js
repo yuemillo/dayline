@@ -24,7 +24,7 @@ export async function errorHandler(err,obj = {}){
 
   Swal.fire({
     icon:'error',
-    title: `錯誤:${status}`,
+    title: status,
     text : msg,
     ...obj
   })

@@ -2,13 +2,14 @@ import { getItem, setItem } from './StorageHandler';
 import { errorHandler, messageHandler } from './messageHandler';
 
 export default function beforeAddPost() {
+
 	const addPostBtn = document.querySelector('#addPostBtn');
 
 	addPostBtn.addEventListener('click', async () => {
 		//檢查日更項目(註冊完使用者還未選定項目)
 		const isNewUser = getItem('isNewUser');
         try{
-            if (isNewUser) {
+            if (isNewUser === 'true') {
                 const result = await messageHandler('info', '尚未選擇類型', "", {
                     html: `<p>親，你還沒決定你的日更類型喔!<br><br>是否要現在就去編輯?</p> `,
                     allowOutsideClick: 'false',
@@ -28,6 +29,7 @@ export default function beforeAddPost() {
                     location.href = './userEdit.html';
                 }
             }
+            else location.href = './post.html'
         }
 		catch(err){
             const error = {

@@ -10,7 +10,7 @@ export default async function processAxios(method, path, data, needToken = false
     if(header) argsArr.push(header)
 
     try{
-        const result = axios[method](...argsArr);
+        const result = await axios[method](...argsArr);
         return result
     }
 	catch (err) {

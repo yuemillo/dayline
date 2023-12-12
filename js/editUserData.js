@@ -6,7 +6,7 @@ import processAxios from './helper/processAxios';
 (()=>getData())()
 
 
-
+//遠端傳過來的copy
 let userData = {
 	// imageUrl: '../assets/images/cat_amazing.jpg',
 	// name: '第八十七代貓皇(超pi)',
@@ -14,7 +14,9 @@ let userData = {
 	// introduction:
 	// 	'本喵乃這世上最高貴的存在，顫抖吧奴才們，不要懷疑就是在說你們這群鏟屎官',
 };
+//使用者上傳的image (base64版本)
 let tempUserImage = '';
+// 原使用者image0
 let originUserImage = '';
 //elem
 const selfie = document.querySelector('.userPic-selfie'); //大頭貼
@@ -30,12 +32,12 @@ async function getData(){
 	renderData(userData);
 }
 
-getData();
+getData();	
 //渲染資料
 function renderData(data) {
 	const { name, daylineType, introduction , selfieImg} = data;
 	console.log(selfieImg)
-	selfie.setAttribute('src', selfieImg ? selfieImg : '../assets/images/Unknown_person.jpg');
+	selfie.setAttribute('src', selfieImg ? `data:image/png;base64,${selfieImg}` : '../assets/images/Unknown_person.jpg');
 	userName.value = name;
 	userDaylineType.value = daylineType ?? '';
 	userIntroductionElem.value = introduction ?? '';
@@ -53,6 +55,10 @@ changeSelfieInput.addEventListener('change',function(e){
 		reader.onload = function (e) {
 			const base64 = e.target.result.split(',')[1];
 
+			//保存
+			if(selfie.src !== '')  originUserImage = selfie.src;
+			tempUserImage = base64;
+
             selfie.src = e.target.result;
         };
 
@@ -67,7 +73,7 @@ submitBtn.addEventListener('click',async (e)=>{
     // 組資料
 	const data  = {
 		name : userName.value,
-		selfieImg : '',
+		selfieImg : tempUserImage,
 		daylineType : userDaylineType.value,
 		introduction : userIntroductionElem.value,
 		updateDate : Date.now()
@@ -77,6 +83,6 @@ submitBtn.addEventListener('click',async (e)=>{
 	if(data.updateDate !== userData.updateDate) setItem('isNewUser',false)
     // 送資料
     const result = await processAxios('patch',`600/users/${getItem('userId')}`,data,true);
-	messageHandler('success','更新成功','已成功更新個人資訊٩(๑•̀ω•́๑)۶');
+	if(result) messageHandler('success','更新成功','已成功更新個人資訊٩(๑•̀ω•́๑)۶');
 	
 })

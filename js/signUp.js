@@ -72,7 +72,6 @@ signUpBtn.addEventListener('click', (e) => {
 
 async function submitForm(data) {
 	const time = new Date().getTime();
-	setItem('isNewUser', true);
 	const finalObj = {
 		...data,
 		createDate: time,
@@ -84,13 +83,12 @@ async function submitForm(data) {
 	try {
 		const result = await processAxios('post', 'signup', finalObj);
 
-		console.log(result);
 		//成功反饋
 		if (result.status === 201) {
-			const dialog = await messageHandler('success', '註冊成功!', '', {
-				confirmButtonText: '登入',
+			setItem('isNewUser', true);
+			const dialog = await messageHandler('success', '註冊成功!', '立刻前往登入吧!', {
+				confirmButtonText: '好',
 			});
-
 			if (dialog.isConfirmed) location.href = './signIn.html';
 		}
 	} catch (err) {

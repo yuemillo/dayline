@@ -7,3 +7,6 @@ export function setItem(target,item){
     localStorage.setItem(target,item);
 }
 
+export function removeItem(target){
+    localStorage.removeItem(target);
+}

@@ -6,6 +6,7 @@ const submitBtn = document.querySelector('.signIn__submitBtn');
 const email = document.querySelector('.signIn__userEmail');
 const psd = document.querySelector('.signIn__userPsd');
 
+
 submitBtn.addEventListener('click', async (e) => {
 	e.preventDefault();
 	//如果為空值返回
@@ -18,24 +19,27 @@ submitBtn.addEventListener('click', async (e) => {
 		});
 		//是的話跳轉頁面
 		if (result.status === 200) {
-            console.log(result)
-			setItem('token', result?.data.accessToken);
-			// location.href = './index.html';
+			setItem('userId', result.data.user.id);
+			setItem('token', result.data.accessToken);
+			setItem('token-expire', Date.now() + 3600000);
+			console.log(result)
+			location.href = './index.html';
 		}
 	} catch (err) {
-        console.log(err);
-        const error = err.response.data;
-        //信箱格式錯誤
-        if(error === 'Email format is invalid') showError(email,'信箱格式錯誤!!')
-        //信箱不存在
-        if(error === 'Cannot find user') showError(email,'此帳號不存在!!')
-        //密碼錯誤
-        if(error === 'Incorrect password' || error === 'Password is too short') showError(psd,'密碼錯誤!!')
-    }
+		console.log(err);
+		const error = err.response.data;
+		//信箱格式錯誤
+		if (error === 'Email format is invalid') showError(email, '信箱格式錯誤!!');
+		//信箱不存在
+		if (error === 'Cannot find user') showError(email, '此帳號不存在!!');
+		//密碼錯誤
+		if (error === 'Incorrect password' || error === 'Password is too short')
+			showError(psd, '密碼錯誤!!');
+	}
 });
 
 // 錯誤反饋
-function showError(input,msg) {
+function showError(input, msg) {
 	if (input) input.classList.add('signIn__input--invalid');
 	errorMsg.classList.remove('d-none');
 	errorMsg.textContent = msg;

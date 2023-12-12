@@ -2,25 +2,44 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg d-flex navbar-dark py-3">
             
-                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="#">日更</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="#">日更</a>
-                        <form class="mt-4 mt-lg-0">
+                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="./index.html">日更</a>
+                <div class="d-flex d-lg-none">
+                    <a href="./user.html" class="user--onLogin bg-transparent border-0 text-hover-primary d-flex text-decoration-none align-items-center mx-3">
+                        <img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic">
+                        <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="./index.html">日更</a>
+                        <form class="my-4 my-lg-0" style="max-width: 640px;">
                             <div class="inputWithin d-flex justify-content-center">
                                 <i class='fas fa-search icon'></i>
                                 <input class="js-search-input form-control ps-4" type="search" name="search" placeholder="搜尋更多日更" aria-label="Search">
                             </div>  
                         </form>
-                        <ul class="navbar-nav mb-2 mb-lg-0 mt-3 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-bold text-light me-5" href="#">日更說明</a>
+                        <ul class="navbar-nav mb-lg-0 mt-lg-0 align-items-lg-center">
+                        <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                            <a class="nav-link fs-5 fw-bold text-light text-hover-primary me-lg-5 " href="./about.html">日更說明</a>
                         </li>
-                            <button class="btn btn-outline-light px-4" type="submit">登入</button>
+                        <!-- 未登入 -->
+                        <li class="user--offLogin nav-item">
+                            <!-- <button class="btn btn-outline-light px-4" type="submit">登入</button> -->
+                            <a class="btn btn-outline-light px-3 me-4" href="./signIn.html">登入</a>
+                            <a class="btn btn-outline-light px-3" href="./signUp.html">註冊</a>
+                        </li>
+                        <!-- 有登入 -->
+                        <li class="user--onLogin nav-item d-flex align-items-lg-center flex-column flex-lg-row">
+                                <button id="addPostBtn" class="btn btn-light fw-bold text-primary py-1 px-3 mb-4 mb-lg-0 w-fit" type="button">發日更</button>
+                                <a href="./user.html" class="d-none d-lg-flex align-items-center bg-transparent border-0 text-hover-primary text-decoration-none  mx-lg-4">
+                                    <img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic">
+                                    <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                                </a>
+                                <!-- <button class="btn btn-light fw-bold text-dark py-1 px-3" type="submit">登出</button> -->
+                        </li>
                         </ul>
-                   
                 </div> 
         
         </nav>

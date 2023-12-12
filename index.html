@@ -4,37 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+
     <title>每日堅持做一件事-日更</title>
-    <script type="module" crossorigin src="/dayline/assets/main-1afdc0a1.js"></script>
-    <link rel="stylesheet" href="/dayline/assets/main-cffaea58.css">
+    <script type="module" crossorigin src="/dayline/assets/main-b65e9ec0.js"></script>
+    <link rel="stylesheet" href="/dayline/assets/main-5b2ceb78.css">
   </head>
   <body>
     <div class="container-fluid bg-dark">
     <div class="container">
         <nav class="navbar navbar-expand-lg d-flex navbar-dark py-3">
             
-                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="#">日更</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="#">日更</a>
-                        <form class="mt-4 mt-lg-0">
+                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="./index.html">日更</a>
+                <div class="d-flex d-lg-none">
+                    <a href="./user.html" class="user--onLogin bg-transparent border-0 text-hover-primary d-flex text-decoration-none align-items-center mx-3">
+                        <img src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg" alt="" class="userPic">
+                        <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="./index.html">日更</a>
+                        <form class="my-4 my-lg-0" style="max-width: 640px;">
                             <div class="inputWithin d-flex justify-content-center">
                                 <i class='fas fa-search icon'></i>
                                 <input class="js-search-input form-control ps-4" type="search" name="search" placeholder="搜尋更多日更" aria-label="Search">
                             </div>  
                         </form>
-                        <ul class="navbar-nav mb-2 mb-lg-0 mt-3 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-bold text-light me-5" href="#">日更說明</a>
+                        <ul class="navbar-nav mb-lg-0 mt-lg-0 align-items-lg-center">
+                        <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                            <a class="nav-link fs-5 fw-bold text-light text-hover-primary me-lg-5 " href="./about.html">日更說明</a>
                         </li>
-                            <button class="btn btn-outline-light px-4" type="submit">登入</button>
+                        <!-- 未登入 -->
+                        <li class="user--offLogin nav-item">
+                            <!-- <button class="btn btn-outline-light px-4" type="submit">登入</button> -->
+                            <a class="btn btn-outline-light px-3 me-4" href="./signIn.html">登入</a>
+                            <a class="btn btn-outline-light px-3" href="./signUp.html">註冊</a>
+                        </li>
+                        <!-- 有登入 -->
+                        <li class="user--onLogin nav-item d-flex align-items-lg-center flex-column flex-lg-row">
+                                <button id="addPostBtn" class="btn btn-light fw-bold text-primary py-1 px-3 mb-4 mb-lg-0 w-fit" type="button">發日更</button>
+                                <a href="./user.html" class="d-none d-lg-flex align-items-center bg-transparent border-0 text-hover-primary text-decoration-none  mx-lg-4">
+                                    <img src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg" alt="" class="userPic">
+                                    <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                                </a>
+                                <!-- <button class="btn btn-light fw-bold text-dark py-1 px-3" type="submit">登出</button> -->
+                        </li>
                         </ul>
-                   
                 </div> 
         
         </nav>
@@ -58,51 +75,218 @@
 </div> -->
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+
+    <div style="height: 100px; background: cyan;">123456</div>
+    <div style="height: 100px; background: cyan;">123456</div>
+    <div class="sort">
+      <div class="sortBgMagnet">
+        <img src="/dayline/assets/magnet-bf6a0c34.png" alt="">
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/dayline/assets/banner01-0a31da9c.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/dayline/assets/banner02-cd1ba714.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/dayline/assets/banner03-c59a8536.jpg" class="d-block w-100" alt="...">
-        </div>
+      <div class="sortBgBush">
+        <img src="/dayline/assets/bush-e045ce74.png" alt="">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="sortBgRhombus01">
+        <img src="/dayline/assets/rhombus-4fd5f420.png" alt="">
+      </div>
+      <div class="sortBgRhombus02">
+        <img src="/dayline/assets/rhombus-4fd5f420.png" alt="">
+      </div>
+      <div class="sortBgRhombus03">
+        <img src="/dayline/assets/rhombus-4fd5f420.png" alt="">
+      </div>
+      <div class="container">
+        <div class="sortTitle mb-4">
+          <h3 class="display-1 fw-black text-white">
+            日更分類
+          <span class="text-white">SORT</span>
+          </h3>
+        </div>
+        <ul class="d-flex justify-content-between flex-wrap">
+          <li class="sortCard">
+              <h3 class="sortText text-white">影音</h4>
+              <img src="/dayline/assets/shor01-7fa03ba4.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard">
+            <h3 class="sortText text-white">繪畫</h4>
+            <img src="/dayline/assets/shor02-25e6ba80.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard">
+            <h3 class="sortText text-white">手作</h4>
+            <img src="/dayline/assets/shor03-99d2d0ea.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">運動</h4>
+            <img src="/dayline/assets/shor04-06f75789.jpg" alt="">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">文章</h4>
+            <img src="/dayline/assets/shor05-eb34a6b3.jpg" alt="" class="imgPosBottom">
+          </li>
+          <li class="sortCard mt-4">
+            <h3 class="sortText text-white">攝影</h4>
+            <img src="/dayline/assets/shor06-5297fdb2.jpg" alt="">
+          </li>
+         
+        </ul>
+      </div>
     </div>
+    <div class="rankingBg">
+      <img src="/dayline/assets/rankingBg-f0ee0497.jpg" alt="">
+    </div>
+    <div class="ranking">
+    <div class="cylinderImg">
+      <img src="/dayline/assets/cylinder-d716531a.png" alt="">
+    </div>
+    
+    <div class="container">
+      <div class="rankingList d-flex justify-content-between">
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 300px;" class="rankingTitle d-flex align-items-center px-4 py-3 mb-3">
+              <i class="fa-solid fa-crown fs-1 me-3"></i>
+              <h2>堅持的王者</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/dayline/assets/card01-d7d600f2.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1126<span class="text-black">&nbsp;天</span></div>
+                <h3>揮刀</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser01-c9b31b57.jpg" alt="">
+                  <P class="fw-bold ms-3">鎖龍</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card02-c24f41d8.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1046<span class="text-black">&nbsp;天</span></div>
+                <h3>投籃</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser02-7b9b67e1.jpg" alt="">
+                  <P class="fw-bold ms-3">櫻木滑倒</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card03-19902469.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1006<span class="text-black">&nbsp;天</span></div>
+                <h3>烤蛋糕</h3>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser03-4a345854.jpg" alt="">
+                  <P class="fw-bold ms-3">香雞士</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 264px;" class="rankingTitle d-flex align-items-center mb-3">
+              <span class="material-icons fs-1 ms-4 me-3 my-3">
+                local_fire_department
+              </span>
+              <h2>最多關注</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/dayline/assets/card04-8c3c504a.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1260<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser04-f1f82318.jpg" alt="">
+                  <P class="fw-bold ms-3">巧巴</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card05-0c3d5f13.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1124<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser05-90f8ca55.jpg" alt="">
+                  <P class="fw-bold ms-3">林治零</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card06-82f5f76e.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 text-primary fw-bold">1003<span class="text-black">&nbsp;關注</span></div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser06-f797ebd7.jpg" alt="">
+                  <P class="fw-bold ms-3">馬絲客</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-column align-items-center">
+            <div style="width: 320px;" class="rankingTitle d-flex align-items-center mb-3">
+              <span class="material-icons fs-1 ms-4 me-3 my-3">
+                today
+              </span>
+              <h2>當日最受歡迎</h2>
+            </div>
+            <li class="rankingCard d-flex align-items-center py-4">
+              <img src="/dayline/assets/card07-832b28de.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">時尚穿搭</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser07-63601706.jpg" alt="">
+                  <P class="fw-bold ms-3">拿梅</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card08-aa906c79.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">好聲音</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser08-26026866.jpg" alt="">
+                  <P class="fw-bold ms-3">玖琳</P>
+                </div>
+              </div>
+            </li>
+            <li class="rankingCard d-flex align-items-center py-4 mt-3">
+              <img src="/dayline/assets/card09-6ce22dce.jpg" alt="" class="me-4">
+              <div class="rankingCardText">
+                <div class="fs-2 fw-bold">畫畫創作</div>
+                <div class="rankingCardUser d-flex mt-3">
+                  <img src="/dayline/assets/rankingCardUser09-b41db510.jpg" alt="">
+                  <P class="fw-bold ms-3">榮一郎</P>
+                </div>
+              </div>
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>
 
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-
-
+    <div class="bottom">
+      <div class="bottomBg">
+        <img src="/dayline/assets/bottom-7bfed15c.jpg" alt="">
+      </div>
+      <div class="bgFlower">
+        <img src="/dayline/assets/smile_flower-65552b92.png" alt="">
+      </div>
+      <div class="bgSmile">
+        <img src="/dayline/assets/smile_face-117ad417.png" alt="">
+      </div>
+      <div class="bottom-divider">
+          <!-- <img src="images/divider_pink.jpg"> -->
+      </div>
+      <div class="bottom-title">
+          <p class="wordfind">搜尋日更</p>
+          <p class="wordsearch">Search</p>
+      </div>
+      <div class="bottom-search">
+          <input type="text" class="bottomsearchbar" placeholder="🔍搜尋更多日更">
+      </div>
+      <div class="bottom-word">
+          <p>每日堅持做一件事情</p>
+      </div>
+  </div>
     <div class="footer bg-dark">
     <div class="footerhead text-center">
-        <div class="logo h1 mt-5 text-light fw-bold">日更</div>
+        <div class="logo mt-5 text-light fs-1 fw-bold">日更</div>
     </div>
     <ul class="footerword d-flex flex-column flex-lg-row justify-content-center mt-4 list-unstyled text-center">
         <li class="fs-5 fs-700 text-light px-3 py-2">日更說明</li>

@@ -10,222 +10,64 @@
 		<%- include('./layout/header'); -%>
 		<main class="py-6 py-lg-lg">
 			<div class="container">
-				<div class="row h-100">
+				<form class="row h-100 gx-5">
 					<div
-						class="col-md-6 d-flex align-items-center justify-content-center h-100"
+						class="col-md-6 d-flex align-items-center justify-content-center mb-4 mb-md-0"
 					>
-						<img src="../assets/images/post_tiger.jpg" alt="" />
+						<div
+							style="min-height: 336px"
+							class="img-unsettle bg-danger w-100 h-100 flex-grow-1 d-flex align-items-center justify-content-center position-relative"
+						>
+							<span class="material-symbols-outlined display-1">
+								add_photo_alternate
+							</span>
+							<label for="addPostImg" class="position-absolute w-100 h-100">
+							</label>
+							<p class="position-absolute bottom-10 left-50">選擇上傳圖片</p>
+							<input type="file" name="" id="addPostImg" class="d-none" />
+						</div>
+						<img src="" alt="" class="" />
 					</div>
-					<div class="col-md-6 flex-grow-1">
-							<div
-								class="post px-3 px-md-4 border border-primary h-100 shadow-lg position-relative flex-grow-1 d-flex flex-column"
-							>
-								<article class="post__content pt-6 pb-2 pt-lg-6">
-									<small class="post__days mb-3 d-block"
-										>第<span
-											class="processDay mx-1 fw-bold fs-5"
-											id="processDay"
-											>666</span
-										>天的日更</small
-									>
-									<h2 class="post__title fs-3 fw-bold mb-4">
-										開心的每日一畫：兇猛的獅子
-									</h2>
-									<p class="post__article w-md-75 lh-lg mb-4">
-										這幅素描是我對老虎深深著迷的表現。透過每一筆勾勒，我試圖捕捉它優雅的姿態和野性的神韻。眼神中蘊藏的力量，以及身上毛髮的質感，都是我用心描繪的元素。
-										<!-- 這不僅是一幅畫， -->
-										<!-- 更是我對自然之美的愛慕之情。希望觀者能透過我的視角，感受到老虎那獨特的魅力，並分享我對大自然的深厚敬意。 -->
-									</p>
-									<div class="post__creater d-flex align-items-center">
-										<span class="material-icons-outlined me-2"> star </span>
-										<div class="post__creater__appellation me-2">
-											受歡迎 <span class="me-1">創作家</span>
-										</div>
-										<a
-											href="#"
-											class="d-flex align-items-center text-decoration-none w-fit"
-										>
-											<img
-												src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-												alt=""
-												class="userPic me-1"
-											/>
-											<h3 class="fs-5">孫東寶</h3>
-										</a>
-									</div>
-								</article>
-								<section
-									class="post__commit__wrap border-top p-2 flex-grow-1 d-flex flex-column"
-								>
-									<h2 class="post__commit__title fs-5 fw-bold mb-3">回應</h2>
-									<ul class="post__commit__content d-flex flex-column overflow-hidden">
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫一</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫二</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/assets/images/unsplash_lAKbS9nUMc4.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-									</ul>
-									<div
-										class="post__commit__input p-3 border border-danger mt-auto mb-3"
-									>
-										123456
-									</div>
-								</section>
+					<div class="col-md-6 col-lg-5">
+						<div
+							class="px-3 px-md-4 h-100 shadow rounded border border-light position-relative flex-grow-1 d-flex flex-column"
+						>
+							<h2 class="fs-4 ps-1 my-3">
+								第 <span class="px-1" id="daylineDays">1</span>天的日更
+							</h2>
+							<div class="form-group mb-3">
+								<label for="" class="form-label d-block">貼文標題</label>
+								<input
+									type="text"
+									class="form-control w-100 ps-3 rounded-0"
+									placeholder="請輸入貼文標題"
+								/>
 							</div>
+							<div class="form-group mb-3">
+								<label for="" class="form-label">貼文內容</label>
+								<textarea
+									name=""
+									id=""
+									cols="20"
+									rows="8"
+									placeholder="請輸入貼文內容"
+									class="form-control-lg w-100 rounded-0"
+									style="resize: vertical"
+								></textarea>
+							</div>
+							<div class="form-group py-3">
+								<input
+									type="submit"
+									class="form-control w-fit px-3 ms-auto btn btn-primary d-block"
+									value="發表日更"
+								/>
+							</div>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</main>
-		<%- include('./layout/footer'); -%>
+		v <%- include('./layout/footer'); -%>
 
 		<script type="module" src="../main.js"></script>
 	</body>

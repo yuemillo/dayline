@@ -10,53 +10,54 @@
 		<%- include('./layout/header'); -%>
 		<main class="py-6 py-lg-lg">
 			<div class="container">
-				<form class="row h-100 gx-5">
+				<form class="row h-100 gx-5 justify-content-center">
 					<div
-						class="col-md-6 d-flex align-items-center justify-content-center mb-4 mb-md-0"
+						class="col-md-6 col-lg-5 d-flex align-items-center justify-content-center mb-4 mb-md-0"
 					>
 						<div
-							style="min-height: 336px"
-							class="img-unsettle bg-danger w-100 h-100 flex-grow-1 d-flex align-items-center justify-content-center position-relative"
+							class="addPostImg__wrap w-100 h-100 flex-grow-1 d-flex align-items-center justify-content-center position-relative"
 						>
-							<span class="material-symbols-outlined display-1">
+							<span class="addPostImg__unsettle__icon material-symbols-outlined display-1">
 								add_photo_alternate
 							</span>
 							<label for="addPostImg" class="position-absolute w-100 h-100">
 							</label>
-							<p class="position-absolute bottom-10 left-50">選擇上傳圖片</p>
+							<p class="addPostImg__unsettle__text position-absolute bottom-10 left-50">選擇上傳圖片</p>
 							<input type="file" name="" id="addPostImg" class="d-none" />
+							<img src="" alt="" id="postImg" class="d-none" />
 						</div>
-						<img src="" alt="" class="" />
 					</div>
 					<div class="col-md-6 col-lg-5">
 						<div
 							class="px-3 px-md-4 h-100 shadow rounded border border-light position-relative flex-grow-1 d-flex flex-column"
 						>
 							<h2 class="fs-4 ps-1 my-3">
-								第 <span class="px-1" id="daylineDays">1</span>天的日更
+								<span class="pe-2 fs-2 text-primary" id="daylineType"></span>一第 <span class="px-1" id="daylineDays">1</span>天的日更
 							</h2>
 							<div class="form-group mb-3">
-								<label for="" class="form-label d-block">貼文標題</label>
+								<label for="addPostTitle" class="form-label d-block">貼文標題</label>
 								<input
+									id="addPostTitle"
 									type="text"
 									class="form-control w-100 ps-3 rounded-0"
 									placeholder="請輸入貼文標題"
 								/>
 							</div>
 							<div class="form-group mb-3">
-								<label for="" class="form-label">貼文內容</label>
+								<label for="addPostText" class="form-label">貼文內容</label>
 								<textarea
-									name=""
-									id=""
+									name="addPostText"
+									id="addPostText"
 									cols="20"
-									rows="8"
+									rows="15"
 									placeholder="請輸入貼文內容"
 									class="form-control-lg w-100 rounded-0"
-									style="resize: vertical"
+									style="resize: none"
 								></textarea>
 							</div>
 							<div class="form-group py-3">
 								<input
+									id="submitPostBtn"
 									type="submit"
 									class="form-control w-fit px-3 ms-auto btn btn-primary d-block"
 									value="發表日更"
@@ -67,8 +68,9 @@
 				</form>
 			</div>
 		</main>
-		v <%- include('./layout/footer'); -%>
+		<%- include('./layout/footer'); -%>
 
+		<script type="module" src="../js/addPost.js"></script>
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>

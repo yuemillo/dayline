@@ -1,9 +1,138 @@
+.textShadowBlack{
+  text-shadow: 6px 6px 0 black;
+  -webkit-text-stroke: 3px black;
+}
+.textShadowWhite{
+  text-shadow: 0 0 6px white;
+}
+.userTag{
+  background-color: $warning;
+  border-radius: 4px;
+} 
 .index-title {
   font-size: 100px;
 }
 .bottom .bottom-divider {
   /*background-color: #FF97B0;*/
 }
+.carousel{
+  position: relative;
+  .carousel-indicators{
+    z-index: 30;
+    transform: translateY(-60px);
+  }
+  .carouselTitle{
+    position: absolute;
+    z-index: 3;
+    left: 312px;
+    bottom: 200px;
+    text-shadow: 4px 4px 0px white;
+    .carouselTitleSmall{
+      text-shadow: 3px 3px 0px $black;
+    }
+  }
+  .carouselDecorate{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+
+.news{
+  position: relative;
+  background-color: $primary;
+  padding: 70px 0;
+  background-image: url(/assets/images/newsBigPic.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  .springBgPic{
+    position: absolute;
+    width: 160px;
+    height: auto;
+    left: 97px;
+    top: -94px;
+    z-index: 30;
+  }
+  .pencliBgPic{
+    position: absolute;
+    transform:rotate(-25deg);
+    width: 320px;
+    height: auto;
+    right: 80px;
+    top: 60px;
+  }
+  .newsList{
+    position: absolute;
+    right: 320px;
+    bottom: 0px;
+    width: 660px;
+    z-index: 100;
+    .newsListBtn{
+      width: 180px;
+      height: 110px;
+      display: block;
+      position: relative; 
+      transform: skew(-10deg) translateX(10%);
+      border-radius: 24px;
+      overflow: hidden;
+      border: 8px solid $black;
+      box-shadow: 14px 14px 0 white;
+      &:hover{
+        bottom: 10px;
+        border: 8px solid $warning;
+      }
+    }
+    .newsListText{
+      text-shadow: 3px 3px 6px black;
+      
+    }
+  }
+
+  
+
+  .newsMain{
+    .newsBigPic{
+      margin-right: 48px;
+      max-width: 852px;
+      height: auto;
+      overflow: hidden;
+      border-radius: 40px;
+      border: 8px solid $black;
+    }
+    .newsMainText{
+      .moreText{
+        width: 200px;
+        border-radius: 8px;
+        background-color: white;
+        border: 4px solid black;
+        box-shadow: 4px 4px 0px 0px #ADB5BD;
+        span{
+          font-size: 32px;
+        }
+      }
+    }
+    
+  }
+  .newsUserInfo{
+    margin-top: 60px;
+    position: relative;
+    .newsUserInfoTitle{
+      text-shadow: 3px 3px 0 black;
+    }
+    .userNamePic{
+      img{
+        object-fit: cover
+      }
+    }
+  }
+
+
+  
+}
+
+
+
 .sort{
   background-color: $black;
   padding: 36px 0;

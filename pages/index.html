@@ -17,6 +17,14 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+    <div class="carouselTitle">
+      <div class="display-1 fw-black text-black">每個每日堅持都值得被關注</div>
+      <div class="carouselTitleSmall fs-1 fw-black text-white">日更不易，需要你的支持鼓勵</div>
+    </div>
+    <div class="carouselDecorate">
+      <img src="/assets/images/carouselDecorate.png" alt="">
+    </div>
+     
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="/assets/images/banner01.jpg" class="d-block w-100" alt="...">
@@ -38,19 +46,71 @@
       </button>
     </div>
 
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
-    <div style="height: 100px; background: cyan;">123456</div>
+   <div class="news">
+    
+    <div class="springBgPic">
+      <img src="/assets//images/spring.png" alt="">
+    </div>
+    <div class="pencliBgPic">
+      <img src="/assets/images/pencli.png" alt="">
+    </div>
+    <ul class="newsList d-flex flex-wrap justify-content-between">
+      <li class="newsListBtn" id="newsListBtn01">
+        <img src="/assets/images/newsbigpic01.jpg" alt="">
+      </li>
+      <li class="newsListBtn" id="newsListBtn02">
+        <img src="/assets/images/newsbigpic02.jpg" alt="">
+      </li>
+      <li class="newsListBtn" id="newsListBtn03">
+        <img src="/assets/images/newsbigpic03.jpg" alt="">
+      </li>
+
+      <li class="newsListBtn mt-5" id="newsListBtn04">
+        <img src="/assets/images/newsbigpic04.jpg" alt="">
+      </li>
+      <li class="newsListBtn mt-5" id="newsListBtn05">
+        <img src="/assets/images/newsbigpic05.jpg" alt="">
+      </li>
+      <li class="newsListBtn mt-5" id="newsListBtn06">
+        <img src="/assets/images/newsbigpic06.jpg" alt="">
+      </li>
+      <div class="fs-3 text-white mt-5 fw-bold newsListText">&lt; CLICK THUMBNSLT TO CHANGE NEWS &gt;</CLICK></div>
+    </ul>
+
+
+
+      <div class="container">
+        <div class="newsMain d-flex align-items-center">
+          <div class="newsBigPic">
+            <img src="/assets/images/newsbigpic01.jpg" alt="" class="newsPic01">
+          </div>
+         
+          <div class="newsMainText ">
+            <div class="display-1 fw-black textShadowWhite">最新日更 <br><span class="text-white textShadowBlack">NEWS</span></div>
+            <div class="moreText py-2 mt-4 d-flex justify-content-center">
+              <p class="fs-5 fw-bold text-primary">更多最新日更</p>
+              <span class="material-icons ms-3 fw-bold text-primary">add</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsUserInfo">
+          <div class="newsUserInfoTitle fs-1 fw-black text-white">我要天涯海角的跑下去</div>
+          <div class="newsUserTag d-flex mt-3">
+            <div class="userTag fs-6 py-2 px-3" id="userTag01">莫莫無名</div><div class="userTag fs-6 py-2 px-3 ms-4" id="userTag02">平民</div>
+          </div>
+          <div class="userNamePic d-flex align-items-center mt-4">
+              <img src="/assets/images/unsplash_lAKbS9nUMc4.jpg" alt="" class="userPic me-3">
+              <p class="fs-6 text-light ms-2 mb-0">林一杰</p>
+          </div>
+          
+        </div>
+        
+      </div>
+
+   </div>
+
+   <img src="/assets/images/newsBg.jpg" alt="">
+
     <div class="sort">
       <div class="sortBgMagnet">
         <img src="/assets/images/magnet.png" alt="">
@@ -259,5 +319,6 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

@@ -45,7 +45,7 @@ function renderData(data) {
 	selfie.setAttribute(
 		'src',
 		selfieImg
-			? `data:image/png;base64,${selfieImg}`
+			? `data:image/png;base64,${selfieImg.img64}`
 			: '../assets/images/Unknown_person.jpg'
 	);
 	userName.value = name;
@@ -67,10 +67,11 @@ changeSelfieInput.addEventListener('change', function (e) {
 			//保存
 			if (selfie.src !== '') originUserImage = selfie.src;
 			tempUserImage = base64;
+			
+			selfie.src = e.target.result;
 		};
 		reader.readAsDataURL(file);
 
-		selfie.src = e.target.result;
 	}
 });
 
@@ -80,7 +81,7 @@ submitBtn.addEventListener('click', async (e) => {
 	// 組資料
 	const data = {
 		name: userName.value,
-		selfieImg: tempUserImage,
+		selfieImg: {img64 : tempUserImage},
 		daylineType: userDaylineType.value,
 		introduction: userIntroductionElem.value,
 		updateDate: Date.now(),

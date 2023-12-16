@@ -11,6 +11,7 @@ const userTag02 = document.querySelector("#userTag02");
 const userNamePic = document.querySelector(".userNamePic")
 
 newsListBtn01.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic01 = `<img src="/assets/images/newsbigpic01.jpg" alt="" class="newsPic01">`
     newsBigPic.innerHTML = renderNewsBigPic01;
     newsUserInfoTitle.textContent = `我要天涯海角的跑下去`;
@@ -20,6 +21,7 @@ newsListBtn01.addEventListener("click",(e)=>{
     <p class="fs-6 text-light ms-2 mb-0">林一杰</p>`;
 })
 newsListBtn02.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic02 = `<img src="/assets/images/newsbigpic02.jpg" alt="" class="newsPic02">`
     newsBigPic.innerHTML = renderNewsBigPic02;
     newsUserInfoTitle.textContent = `我住的城市每日夕陽`;
@@ -29,6 +31,7 @@ newsListBtn02.addEventListener("click",(e)=>{
     <p class="fs-6 text-light ms-2 mb-0">魏得剩</p>`;
 })
 newsListBtn03.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic03 = `<img src="/assets/images/newsbigpic03.jpg" alt="" class="newsPic03">`
     newsBigPic.innerHTML = renderNewsBigPic03;
     newsUserInfoTitle.textContent = `最潮的街頭塗鴉`;
@@ -38,6 +41,7 @@ newsListBtn03.addEventListener("click",(e)=>{
     <p class="fs-6 text-light ms-2 mb-0">彼得潘</p>`;
 })
 newsListBtn04.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic04 = `<img src="/assets/images/newsbigpic04.jpg" alt="" class="newsPic04">`
     newsBigPic.innerHTML = renderNewsBigPic04;
     newsUserInfoTitle.textContent = `手寫的溫度`;
@@ -47,6 +51,7 @@ newsListBtn04.addEventListener("click",(e)=>{
     <p class="fs-6 text-light ms-2 mb-0">王羲之</p>`;
 })
 newsListBtn05.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic05 = `<img src="/assets/images/newsbigpic05.jpg" alt="" class="newsPic05">`
     newsBigPic.innerHTML = renderNewsBigPic05;
     newsUserInfoTitle.textContent = `一日一漫畫`;
@@ -56,6 +61,7 @@ newsListBtn05.addEventListener("click",(e)=>{
     <p class="fs-6 text-light ms-2 mb-0">鳥三民</p>`;
 })
 newsListBtn06.addEventListener("click",(e)=>{
+    e.preventDefault();
     let renderNewsBigPic06 = `<img src="/assets/images/newsbigpic06.jpg" alt="" class="newsPic06">`
     newsBigPic.innerHTML = renderNewsBigPic06;
     newsUserInfoTitle.textContent = `為妳寫詩`;

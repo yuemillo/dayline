@@ -29,7 +29,7 @@ export default function beforeAddPost() {
                     location.href = './userEdit.html';
                 }
             }
-            else location.href = './post.html'
+            else location.href = './addPost.html'
         }
 		catch(err){
             const error = {

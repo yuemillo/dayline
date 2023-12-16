@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>貼文</title>
-		<script type="module" crossorigin src="/dayline/assets/main-b65e9ec0.js"></script>
-		<link rel="stylesheet" href="/dayline/assets/main-5b2ceb78.css">
+		<script type="module" crossorigin src="/dayline/assets/main-41a9c07b.js"></script>
+		<script type="module" crossorigin src="/dayline/assets/post-2ce49bcd.js"></script>
+		<link rel="stylesheet" href="/dayline/assets/main-63661c2c.css">
 	</head>
 	<body>
 		<div class="container-fluid bg-dark">
@@ -78,26 +79,26 @@
 			<div class="container">
 				<div class="row h-100">
 					<div
-						class="col-md-6 d-flex align-items-center justify-content-center h-100"
+						class="col-md-6 d-flex align-items-center justify-content-center h-100 border border-3 rounded border-primary"
 					>
-						<img src="/dayline/assets/post_tiger-597b8d9b.jpg" alt="" />
+						<img src="" alt="" id="postImg"/>
 					</div>
 					<div class="col-md-6 flex-grow-1">
 							<div
-								class="post px-3 px-md-4 border border-primary h-100 shadow-lg position-relative flex-grow-1 d-flex flex-column"
+								class="post px-3 px-md-4 border border-primary rounded h-100 shadow-lg position-relative flex-grow-1 d-flex flex-column"
 							>
 								<article class="post__content pt-6 pb-2 pt-lg-6">
 									<small class="post__days mb-3 d-block"
 										>第<span
-											class="processDay mx-1 fw-bold fs-5"
-											id="processDay"
+											class="post__daylineDays mx-1 fw-bold fs-5"
+											id="daylineDays"
 											>666</span
 										>天的日更</small
 									>
-									<h2 class="post__title fs-3 fw-bold mb-4">
+									<h2 class="post__title fs-3 fw-bold mb-4" id="post__title">
 										開心的每日一畫：兇猛的獅子
 									</h2>
-									<p class="post__article w-md-75 lh-lg mb-4">
+									<p class="post__article w-md-75 lh-lg mb-4" id="post__textBody">
 										這幅素描是我對老虎深深著迷的表現。透過每一筆勾勒，我試圖捕捉它優雅的姿態和野性的神韻。眼神中蘊藏的力量，以及身上毛髮的質感，都是我用心描繪的元素。
 										<!-- 這不僅是一幅畫， -->
 										<!-- 更是我對自然之美的愛慕之情。希望觀者能透過我的視角，感受到老虎那獨特的魅力，並分享我對大自然的深厚敬意。 -->
@@ -181,62 +182,7 @@
 											</a>
 											<p>大老牛逼，猴子666666</p>
 										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
-										<li class="w-100 d-flex align-items-center px-1 mb-3">
-											<a
-												href="#"
-												class="d-flex align-items-center text-decoration-none me-3"
-											>
-												<img
-													src="/dayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg"
-													alt=""
-													class="userPic-sm me-1"
-												/>
-												<h3 class="fs-5">孫三</h3>
-											</a>
-											<p>大老牛逼，猴子666666</p>
-										</li>
+
 										<li class="w-100 d-flex align-items-center px-1 mb-3">
 											<a
 												href="#"
@@ -296,7 +242,7 @@
         <div class="logo mt-5 text-light fs-1 fw-bold">日更</div>
     </div>
     <ul class="footerword d-flex flex-column flex-lg-row justify-content-center mt-4 list-unstyled text-center">
-        <li class="fs-5 fs-700 text-light px-3 py-2">日更說明</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2"><a href="about.html" class="text-decoration-none">日更說明</a></li>
         <li class="fs-5 fs-700 text-light px-3 py-2">網站導覽</li>
         <li class="fs-5 fs-700 text-light px-3 py-2">聯絡我們</li>
         <li class="fs-5 fs-700 text-light px-3 py-2">行銷合作</li>
@@ -312,6 +258,7 @@
         <p class="fs-6">此專題僅供面試作品所用，非商業營利性質</p>
     </div>
 </div>
+		
 		
 	</body>
 </html>

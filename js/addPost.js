@@ -26,11 +26,9 @@ let userPost = [];
 	daylineDaysElem.textContent = daylineDay ? daylineDay + 1 : 1;
 	daylineTypeElem.textContent = daylineType;
 
-	userPost = result.data.posts;
-	// console.log(result)
+	userPost = result.data.posts;	
 })();
 
-// ../assets/images/doramon.jpg
 let postTempImg = '';
 
 addPostImgInput.addEventListener('change', function (e) {

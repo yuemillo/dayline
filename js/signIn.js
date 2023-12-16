@@ -22,7 +22,7 @@ submitBtn.addEventListener('click', async (e) => {
 			setItem('userId', result.data.user.id);
 			setItem('token', result.data.accessToken);
 			setItem('token-expire', Date.now() + 3600000);
-			console.log(result)
+
 			location.href = './index.html';
 		}
 	} catch (err) {

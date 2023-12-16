@@ -2,7 +2,7 @@ import axios from 'axios';
 import {getItem} from './StorageHandler';
 import { errorHandler } from './messageHandler';
 export default async function processAxios(method, path, data, needToken = false) {
-	const base = 'http://localhost:3000';
+	const base = 'https://json-server-dayline.onrender.com';
 	const url = `${base}/${path}`;
     const header = needToken ? { headers:{authorization: `Bearer ${getItem('token')}`}} : false;  
     const argsArr = [url];        

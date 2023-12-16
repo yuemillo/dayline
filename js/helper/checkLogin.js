@@ -19,7 +19,7 @@ export default async ()=>{
 
         const userPic = document.querySelectorAll('.userPic');
         const userName = document.querySelectorAll('.userPic + *');
-        userPic.forEach(x=>x.src = `data:image/png;base64,${selfieImg}`);
+        userPic.forEach(x=>x.src = selfieImg ? `data:image/png;base64,${selfieImg.img64}` : '../assets/images/Unknown_person.jpg');
         userName.forEach(x=>x.textContent = name);
     }
     else{

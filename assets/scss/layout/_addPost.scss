@@ -1,0 +1,30 @@
+.addPostImg__wrap {
+	min-height: 336px;
+	background-color: $gray-300;
+	label {
+		cursor: pointer;
+		z-index: 10;
+	}
+    img{
+
+        object-fit: cover;
+    }
+    &:has(img:not(.d-none)) > :where(.addPostImg__unsettle__icon, .addPostImg__unsettle__text){
+        display: none;
+    }
+    &:has(img:not(.d-none)){
+        background: transparent;
+        border: 2px solid $red-200;
+        border-radius: 12px;
+    }
+}
+
+
+.addPostImg {
+	&__unsettle__icon {
+		color: $gray-500;
+	}
+	&__unsettle__text {
+		color: $gray-700;
+	}
+}
